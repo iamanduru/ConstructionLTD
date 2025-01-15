@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+:root {
+  /* Color Palette */
+  --teal-blue: #008080;    /* Primary brand color */
+  --slate-grey: #708090;   /* Secondary color */
+  --vibrant-orange: #FF6600; /* Accent color */
+  --deep-black: #1A1A1A;   /* Dark shade */
+  --ivory-white: #FFFFF0;  /* Light shade */
+
+  /* Typography */
+  --heading-font: 'Lato', sans-serif;      /* For headings */
+  --body-font: 'League Spartan', sans-serif;  /* For body text */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--teal-blue);
+    color: var(--ivory-white);
+}
