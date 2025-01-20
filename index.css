@@ -114,10 +114,12 @@ a{
   align-items: center;
   padding: 40px;
   gap: 20px; /* Spacing between the image and boxes */
+  background-color: #fff;
 }
 
 .left-image-container {
   flex: 1;
+  padding-right: 20px;
 }
 
 .left-image {
@@ -127,17 +129,22 @@ a{
 }
 
 .right-boxes {
-  flex: 1;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  flex: 2;
   gap: 20px;
+  align-items: flex-end; /* Ensures boxes align at the bottom */
 }
+  
+
 
 .box {
   background-color: #ffffff; /* White background for the boxes */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adds subtle shadow */
   padding: 20px;
+  width: 30%;
   border-radius: 10px; /* Optional, gives boxes rounded corners */
+  justify-content: flex-end; /* Align content inside the box at the top */
 }
 
 .box h2 {
@@ -149,6 +156,22 @@ a{
   font-size: 16px;
   color: #333; /* Dark text for readability */
 }
+
+/* First Box - Larger Vertical Size */
+.box-large {
+  height: 350px; /* Make the first box larger vertically */
+}
+
+/* Second Box - Medium Vertical Size */
+.box-medium {
+  height: 250px; /* Make the second box smaller than the first */
+}
+
+/* Third Box - Smaller Vertical Size */
+.box-small {
+  height: 200px; /* Make the third box the smallest vertically */
+}
+
 
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
