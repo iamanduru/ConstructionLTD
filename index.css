@@ -78,7 +78,7 @@ a{
 }
 
 .image {
-  width: 30%;
+  width: 80%;
   height: auto;
   border-radius: 10px;
   margin-right: 50px;
@@ -103,4 +103,67 @@ a{
   border-radius: 5px;
   cursor: pointer;
 }
+
+
+/* New Section Styles: Image and Boxed Content */
+.image-and-boxes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  gap: 20px; /* Spacing between the image and boxes */
+}
+
+.left-image-container {
+  flex: 1;
+}
+
+.left-image {
+  width: 80%;
+  height: auto;
+  border-radius: 10px; /* Optional, gives the image rounded corners */
+}
+
+.right-boxes {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.box {
+  background-color: #ffffff; /* White background for the boxes */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adds subtle shadow */
+  padding: 20px;
+  border-radius: 10px; /* Optional, gives boxes rounded corners */
+}
+
+.box h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.box p {
+  font-size: 16px;
+  color: #333; /* Dark text for readability */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .image-and-boxes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left-image-container,
+  .right-boxes {
+    flex: none;
+    width: 100%;
+  }
+
+  .left-image {
+    width: 80%; /* Resize the image for small screens */
+  }
+}
+
 
