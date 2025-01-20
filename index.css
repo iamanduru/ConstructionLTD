@@ -204,3 +204,53 @@ span{
 }
 
 
+/* Last Section: Testimonials */
+.testimonials-section {
+  background-color: #ffffff;  /* White background */
+  padding: 40px 20px;         /* Add padding to the section */
+  text-align: center;         /* Center the text */
+}
+
+.testimonials-section h1 {
+  font-size: 36px;            /* Heading size */
+  margin-bottom: 40px;        /* Space below the heading */
+  color: #333333;             /* Dark color for heading */
+}
+
+.testimonial-boxes {
+  display: flex;              /* Flexbox layout to arrange boxes horizontally */
+  justify-content: space-between;
+  gap: 20px;                  /* Space between the boxes */
+  flex-wrap: wrap;            /* Allow wrapping on smaller screens */
+}
+
+.testimonial-box {
+  background-color: #ffffff; /* White background for the boxes */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  /* Box shadow effect */
+  padding: 30px;
+  border-radius: 10px;        /* Rounded corners for the boxes */
+  width: 45%;                 /* Set width of the box */
+  min-width: 250px;           /* Ensure minimum width of the box */
+  display: flex;
+  align-items: center;        /* Center content vertically */
+  justify-content: center;    /* Center content horizontally */
+}
+
+.testimonial-box p {
+  font-size: 18px;            /* Font size for the paragraph */
+  color: #555555;             /* Slightly lighter color for text */
+  text-align: center;         /* Center-align the text inside the box */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .testimonial-boxes {
+    flex-direction: column;   /* Stack the testimonial boxes vertically on smaller screens */
+    align-items: center;
+  }
+
+  .testimonial-box {
+    width: 80%;               /* Increase width of the boxes to fit on small screens */
+    margin-bottom: 20px;      /* Add spacing between stacked boxes */
+  }
+}
