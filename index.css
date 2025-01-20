@@ -98,11 +98,12 @@ a{
 .button {
   background-color:#FF6600;
   color: #fff;
-  padding: 50px 50px;
+  padding: 30px 50px;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   cursor: pointer;
   margin-left: 200px;
+  width: auto;
 }
 
 
