@@ -147,6 +147,10 @@ a{
   justify-content: flex-end; /* Align content inside the box at the top */
 }
 
+span{
+  color: #FF6600;
+  
+}
 .box h2 {
   font-size: 20px;
   margin-bottom: 10px;
@@ -160,16 +164,24 @@ a{
 /* First Box - Larger Vertical Size */
 .box-large {
   height: 350px; /* Make the first box larger vertically */
+  justify-content: center; /* Center content vertically */
+  align-items: center;     /* Center content horizontally */
 }
 
 /* Second Box - Medium Vertical Size */
 .box-medium {
   height: 250px; /* Make the second box smaller than the first */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 /* Third Box - Smaller Vertical Size */
 .box-small {
   height: 200px; /* Make the third box the smallest vertically */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Align all content to the bottom of the box */
 }
 
 
