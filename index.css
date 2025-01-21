@@ -203,6 +203,77 @@ span{
   }
 }
 
+/* Second Last Section: Efficient and Integrated Services */
+.services-section {
+  background-color: #f9f9f9;  /* Light background color for contrast */
+  padding: 60px 20px;         /* Padding for spacing */
+  text-align: center;         /* Center align the heading */
+}
+
+.services-section h1 {
+  font-size: 36px;
+  margin-bottom: 40px;        /* Add spacing below the heading */
+  color: #333333;             /* Dark text for contrast */
+}
+
+.images-container {
+  display: flex;              /* Flexbox for the image layout */
+  justify-content: space-between;
+  gap: 20px;                  /* Space between left and right columns */
+  flex-wrap: wrap;            /* Allow images to wrap on smaller screens */
+}
+
+.left-images, .right-images {
+  display: flex;
+  flex-direction: column;     /* Stack images vertically in each column */
+  gap: 20px;                  /* Space between images */
+  flex: 1;                    /* Make both columns take equal space */
+}
+
+.image-box {
+  position: relative;         /* Needed for positioning the overlay text */
+}
+
+.service-image {
+  width: 100%;                /* Make images take full width of the box */
+  height: auto;
+  border-radius: 10px;        /* Optional, for rounded corners on images */
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);  /* Center the text in the middle of the image */
+  color: #ffffff;                    /* White text */
+  font-size: 20px;                   /* Text size */
+  font-weight: bold;                 /* Make text bold */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);  /* Optional shadow for text for better contrast */
+  text-align: center;                /* Center text horizontally */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for text */
+  padding: 10px;
+  border-radius: 5px;                /* Optional, rounded corners for the text background */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .images-container {
+    flex-direction: column;   /* Stack the columns vertically on smaller screens */
+    align-items: center;      /* Center the images */
+  }
+
+  .left-images, .right-images {
+    flex: none;               /* Let each column take full width */
+    width: 80%;                /* Set each column width to 80% */
+    margin-bottom: 20px;       /* Add spacing between stacked columns */
+  }
+
+  .image-box {
+    width: 100%;               /* Make the image box take full width on small screens */
+  }
+}
+
+
 
 /* Last Section: Testimonials */
 .testimonials-section {
