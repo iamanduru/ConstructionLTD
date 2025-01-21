@@ -205,7 +205,7 @@ span{
 
 /* Second Last Section: Efficient and Integrated Services */
 .services-section {
-  background-color: #f9f9f9;  /* Light background color for contrast */
+  background-color: var(--teal-blue);  /* Light background color for contrast */
   padding: 60px 20px;         /* Padding for spacing */
   text-align: center;         /* Center align the heading */
 }
@@ -213,7 +213,7 @@ span{
 .services-section h1 {
   font-size: 36px;
   margin-bottom: 40px;        /* Add spacing below the heading */
-  color: #333333;             /* Dark text for contrast */
+  color: #fff;             /* Dark text for contrast */
 }
 
 .images-container {
@@ -235,7 +235,7 @@ span{
 }
 
 .service-image {
-  width: 100%;                /* Make images take full width of the box */
+  width: 80%;                /* Make images take full width of the box */
   height: auto;
   border-radius: 10px;        /* Optional, for rounded corners on images */
 }
@@ -245,12 +245,11 @@ span{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);  /* Center the text in the middle of the image */
-  color: #ffffff;                    /* White text */
+  color: var(--vibrant-orange);                    /* White text */
   font-size: 20px;                   /* Text size */
   font-weight: bold;                 /* Make text bold */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);  /* Optional shadow for text for better contrast */
-  text-align: center;                /* Center text horizontally */
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for text */
+  text-align: center;                /* Center text horizontally */ 
   padding: 10px;
   border-radius: 5px;                /* Optional, rounded corners for the text background */
 }
