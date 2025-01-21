@@ -353,17 +353,17 @@ span{
 /* Form Styles */
 .contact-form {
   background: var(--teal-blue);
-  padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  width: 300px;
-   margin: left 10px; 
+  width: 400px;
+  
 }
 
 .contact-form label {
   display: block;
   margin: 10px 0 5px;
   color: #034A4C;
+  margin-left: 40px;
 }
 
 .contact-form input,
@@ -396,8 +396,10 @@ span{
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  width: 300px;
+  width: 400px;
   text-align: center;
+  height: auto;
+  margin:auto;
 }
 
 .info-box p {
