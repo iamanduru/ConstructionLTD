@@ -435,5 +435,14 @@ span{
 }
 .Gallery{
   background-color: #fff;
+  display: flex;              /* Flexbox for the image layout */
+  justify-content: space-between;
+  gap: 20px;                  /* Space between left and right columns */
+  flex-wrap: wrap;     
+}
+.Left-Images, .Right-Images{
   display: flex;
+  flex-direction: column;     /* Stack images vertically in each column */
+  gap: 20px;                  /* Space between images */
+  flex: 1; 
 }
