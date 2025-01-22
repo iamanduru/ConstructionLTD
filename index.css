@@ -446,3 +446,9 @@ span{
   gap: 20px;                  /* Space between images */
   flex: 1; 
 }
+.Gallery{
+display: flex;              /* Flexbox for the image layout */
+justify-content: space-between;
+gap: 20px;                  /* Space between left and right columns */
+flex-wrap: wrap
+}
