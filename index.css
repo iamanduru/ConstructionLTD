@@ -436,7 +436,6 @@ span{
 .Gallery{
   background-color: #fff;
   display: flex;              /* Flexbox for the image layout */
-  justify-content: space-between;
   gap: 20px;                  /* Space between left and right columns */
   flex-wrap: wrap;     
 }
@@ -445,10 +444,28 @@ span{
   flex-direction: column;     /* Stack images vertically in each column */
   gap: 20px;                  /* Space between images */
   flex: 1; 
+  margin-right: 20px;
+  margin-top: 50px;
 }
 .Gallery{
-display: flex;              /* Flexbox for the image layout */
-justify-content: space-between;
-gap: 20px;                  /* Space between left and right columns */
+display: flex;              /* Flexbox for the image layout */                  /* Space between left and right columns */
 flex-wrap: wrap
+}
+.G-Gallery{
+  color:var(--deep-black) ;
+  text-align: center;
+  justify-content: center;
+  background-color: #fff;
+  margin: auto;
+  width: 300;
+  height: auto;
+ 
+}
+
+.P-Gallery{
+  width: 500px;
+  height: auto;
+  
+  
+
 }
