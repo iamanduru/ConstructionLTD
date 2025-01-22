@@ -406,3 +406,18 @@ span{
   margin: 10px 0;
   font-size: 1.2rem;
 }
+
+/*Portfolio Section*/
+.Portfolio-Container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  gap: 20px; /* Spacing between the image and boxes */
+
+}
+.Portfolio-Image{
+  width: 500px;
+  height: auto;
+  padding: 20px;
+}
