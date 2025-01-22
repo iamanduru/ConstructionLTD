@@ -465,7 +465,10 @@ flex-wrap: wrap
 .P-Gallery{
   width: 500px;
   height: auto;
-  
-  
+}
+.P-Buttons{
+  background-color: var(--teal-blue);
+  display: flex;
+  width: 500px;
 
 }
