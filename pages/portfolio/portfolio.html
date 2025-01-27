@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    
+    <title>Anduru Construction LTD </title>
+    <link rel="stylesheet" href="/pages/portfolio/portfolio.css">
+</head>
+<body>
+    <section class="navigation__bar">
+        <div class="logo">
+            <img src="/img/Logo mark Dark.png" alt="Anduru Logo" class="logo-img">
+        </div>
+        <div class="navigation">
+            <ul class="nav-links">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/pages/about/about.html">About</a></li>
+                <li><a href="/pages/portfolio/portfolio.html">Portfolio</a></li>
+                <li><a href="/pages/contact/contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio">
+        <div class="portfolio__header">
+            <h1>Feature Projects</h1>
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn active" data-filter="commercial">Commercial</button>
+                <button class="filter-btn active" data-filter="residential">Residential</button>
+                <button class="filter-btn active" data-filter="industrial">Industrial</button>
+            </div>
+        </div>
+
+        <div class="portfolio__container">
+            <div class="portfolio__grid" id="portfolioGrid">
+
+            </div>
+        </div>
+
+        <div class="modal" id="projectModal">
+            <div class="modal__backdrop"></div>
+            <div class="modal__content">
+                <div class="modal__header">
+                    <h2 id="modal-header"></h2>
+                    <button class="close-btn" id="closeModal">
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+                <div class="modal__body" id="modalBody"></div>
+            </div>
+        </div>
+    </section>
+  
+
+    <!--Footer-->
+    <footer class="footer">
+        <div class="footer__content">
+            <div class="footer__section">
+                <h3 class="footer__logo">Anduru Constructions</h3>
+                <p>Building Dreams into reality with innovation and excellence.</p>
+                <div class="social__links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div class="footer__section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__section">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="#architectural">Architectural Planning</a></li>
+                    <li><a href="#visualization">3D Visualization</a></li>
+                    <li><a href="#construction">Eco-Friendly Construction</a></li>
+                    <li><a href="#interior">Interior Solutions</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__section">
+                <h4>Contact Info</h4>
+                <ul class="contact__info">
+                    <li><i class="fas fa-map-marker-alt"></i> 123 Construction Ave, City</li>
+                    <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                    <li><i class="fas fa-envelope"></i> info@anduru.com</li>
+                </ul>
+            </div>
+
+            <div class="footer__bottom">
+                <p>&copy; 2024 Anduru Construction. All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/pages/portfolio/portfolio.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+</body>
+</html>

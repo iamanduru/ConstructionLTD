@@ -6,11 +6,233 @@
 
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    
     <title>Anduru Construction LTD </title>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    Happy coding!!
+    <section class="navigation__bar">
+        <div class="logo">
+            <img src="img/Logo mark Dark.png" alt="Anduru Logo" class="logo-img">
+        </div>
+        <div class="navigation">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pages/about/about.html">About</a></li>
+                <li><a href="pages/portfolio/portfolio.html">Portfolio</a></li>
+                <li><a href="pages/contact/contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </section>
+
+    <section class="hero">
+        <div class="hero__content">
+            <div class="hero__text">
+                <h1>Building Dreams<br>Brick by Brick</h1>
+                <p>Precision and trust—shaping inspiring spaces.</p>
+                <button class="cta__button">What we do</button>
+            </div>
+            <div class="hero__image">
+                <img src="img/HeroImage.png" alt="Construction illustration">
+            </div>
+        </div>
+    </section>
+
+    <!--Info Stats-->
+    <section class="stats__section">
+        <div class="stats__container">
+            <div class="stat__card">
+                <div class="stat__number">
+                    <span class="counter" data-target="100">0</span>+
+                </div>
+                <p class="stat__text">Our esteemed customers, clients & partners</p>
+            </div>
+            <div class="stat__card">
+                <div class="stat__number">
+                    <span class="counter" data-target="1925">0</span>+
+                </div>
+                <p class="stat__text">Total Projects</p>
+            </div>
+            <div class="stat__card">
+                <div class="stat__number">
+                    <span class="counter" data-target="6">0</span>
+                </div>
+                <p class="stat__text">years of dedicated services</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="services__container">
+            <h2 class="section__title">Our Services</h2>
+            
+            <div class="services__grid">
+                <!-- Service Card 1 -->
+                <div class="service__card">
+                    <div class="service__image">
+                        <img src="img/card1.png" alt="Architectural Masterplanning">
+                        <div class="service__overlay"></div>
+                    </div>
+                    <div class="service__content">
+                        <h3 class="service__title">Architectural Masterplanning</h3>
+                        <p class="service__description">Crafting visionary designs that integrate functionality, sustainability, and aesthetics for exceptional projects.</p>
+                    </div>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="service__card">
+                    <div class="service__image">
+                        <img src="img/card2.png" alt="3D Visualization">
+                        <div class="service__overlay"></div>
+                    </div>
+                    <div class="service__content">
+                        <h3 class="service__title">3D Visualization & Virtual Tours</h3>
+                        <p class="service__description">Bringing concepts to life with immersive 3D models and virtual walkthroughs for a clear project vision.</p>
+                    </div>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="service__card">
+                    <div class="service__image">
+                        <img src="img/card3.png" alt="Eco-Friendly Construction">
+                        <div class="service__overlay"></div>
+                    </div>
+                    <div class="service__content">
+                        <h3 class="service__title">Eco-Friendly Construction</h3>
+                        <p class="service__description">Sustainable building practices using green materials and energy-efficient designs.</p>
+                    </div>
+                </div>
+
+                <!-- Service Card 4 -->
+                <div class="service__card">
+                    <div class="service__image">
+                        <img src="img/card4.png" alt="Custom Interior Solutions">
+                        <div class="service__overlay"></div>
+                    </div>
+                    <div class="service__content">
+                        <h3 class="service__title">Custom Interior Solutions</h3>
+                        <p class="service__description">Designing bespoke interiors tailored to individual lifestyles and business needs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Testimonials-->
+<section class="testimonials">
+    <h2 class="section__title">Testimonials</h2>
+    <div class="swiper testimonials-slider">
+      <div class="swiper-wrapper">
+        <!--Testimonial 1-->
+        <div class="swiper-slide">
+          <div class="testimonial-card">
+            <div class="quote-icon">"</div>
+            <p class="testimonial-text">Anduru Construction Ltd. transformed our space with innovative designs and unmatched attention to detail. Highly recommended!</p>
+            <div class="testimonial-author">
+              <h4>Sarah Johnson</h4>
+              <p>Residential Client</p>
+            </div>
+          </div>
+        </div>
+        <!--Testimonial 2-->
+        <div class="swiper-slide">
+          <div class="testimonial-card">
+            <div class="quote-icon">"</div>
+            <p class="testimonial-text">Outstanding professionalism and exceptional results. Their eco-friendly approach aligned perfectly with our company values.</p>
+            <div class="testimonial-author">
+              <h4>Michael Chen</h4>
+              <p>Commercial Client</p>
+            </div>
+          </div>
+        </div>
+        <!--Testimonial 3-->
+        <div class="swiper-slide">
+          <div class="testimonial-card">
+            <div class="quote-icon">"</div>
+            <p class="testimonial-text">Outstanding professionalism and exceptional results. Their eco-friendly approach aligned perfectly with our company values.</p>
+            <div class="testimonial-author">
+              <h4>Michael Chen</h4>
+              <p>Commercial Client</p>
+            </div>
+          </div>
+        </div>
+        <!--Testimonial 4-->
+        <div class="swiper-slide">
+          <div class="testimonial-card">
+            <div class="quote-icon">"</div>
+            <p class="testimonial-text">Outstanding professionalism and exceptional results. Their eco-friendly approach aligned perfectly with our company values.</p>
+            <div class="testimonial-author">
+              <h4>Michael Chen</h4>
+              <p>Commercial Client</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </section>
+
+    <!--Footer-->
+    <footer class="footer">
+        <div class="footer__content">
+            <div class="footer__section">
+                <h3 class="footer__logo">Anduru Constructions</h3>
+                <p>Building Dreams into reality with innovation and excellence.</p>
+                <div class="social__links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div class="footer__section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__section">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="#architectural">Architectural Planning</a></li>
+                    <li><a href="#visualization">3D Visualization</a></li>
+                    <li><a href="#construction">Eco-Friendly Construction</a></li>
+                    <li><a href="#interior">Interior Solutions</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__section">
+                <h4>Contact Info</h4>
+                <ul class="contact__info">
+                    <li><i class="fas fa-map-marker-alt"></i> 123 Construction Ave, City</li>
+                    <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                    <li><i class="fas fa-envelope"></i> info@anduru.com</li>
+                </ul>
+            </div>
+
+            <div class="footer__bottom">
+                <p>&copy; 2024 Anduru Construction. All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
 </body>
 </html>
