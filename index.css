@@ -24,9 +24,13 @@ body {
     background-color: var(--teal-blue);
     color: var(--ivory-white);
 }
+
 .Landing-Page{
   display: flex;
   align-items: center;
+  background: url(https://pixabay.com/photos/building-facade-window-city-5523630/) no-repeat center center;
+  background-size: cover;
+  animation: moveBackground 20s linear infinite;
 }
 .logo-container{
   margin-right: 20px;
