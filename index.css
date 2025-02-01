@@ -10,6 +10,11 @@
   --vibrant-orange: #FF6600; /* Accent color */
   --deep-black: #1A1A1A;   /* Dark shade */
   --ivory-white: #FFFFF0;  /* Light shade */
+  --big-font-:2.25rem;
+  --h1-font-size:1.5rem;
+  --h2-font-size:1.25rem
+  --z-tooltip:10;
+  --z-index:100;
 
   /* Typography */
   --heading-font: 'Lato', sans-serif;      /* For headings */
@@ -42,6 +47,15 @@ body {
   top: 0;
   left: 0;
   background: var(--teal-blue);
+  z-index: var(--z-index);
+}
+nav{
+  position: relative;
+  height: auto;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+
 }
 
 /*REUSABLE CSS CLASSES*/
