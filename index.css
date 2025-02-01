@@ -22,101 +22,73 @@
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-html {
+html{
   scroll-behavior: smooth;
 }
+
 body {
-  background-color: var(--teal-blue);
-  color: var(--ivory-white);
+    background-color: var(--teal-blue);
+    color: var(--ivory-white);
 }
 
+.Logo{
+  width: 50px;
+  height: auto;
+
+}
+/*Header &Nav*/
 .header {
   position: fixed;
   width: 100%;
   top: 0;
   left: 0;
   background: var(--teal-blue);
-  z-index: 999;
+  z-index: var(--z-index);
 }
-
-nav {
-  display: flex;
+nav{
+  position: relative;
+  height: auto;
   justify-content: space-between;
-  align-items: center;
+  display: flex;
+  align-items:center ;
   padding: 1rem 2rem;
 }
 
-.Logo {
-  width: 50px;
-  height: auto;
-}
 
-.nav-menu {
-  display: none;
-}
-
-.nav-list {
+.nav-list{
   list-style: none;
   display: flex;
-  column-gap: 2rem;
-}
-
-.nav-list a {
+  flex-direction: row;
+  column-gap: 4rem;
+  color: #FFFFF0;
   text-decoration: none;
-  color: var(--ivory-white);
-  transition: color 0.4s;
+  margin-top: 1rem;
+  
 }
-
-.nav-list a:hover {
-  color: var(--vibrant-orange);
-}
-
-.nav-toggle {
-  font-size: 1.5rem;
-  cursor: pointer;
+a{
   color: var(--ivory-white);
-  display: none;
+  transition: color .4s;
+  text-decoration: none;
 }
-
-.nav-close {
-  font-size: 1.5rem;
-  color: var(--ivory-white);
+a:hover{
+  color:var(--vibrant-orange);
+}
+.nav-close{
   position: absolute;
   top: 1rem;
   right: 1.5rem;
-  cursor: pointer;
 }
 
-/* Mobile Navigation */
-@media screen and (max-width: 1150px) {
-  .nav-menu {
-    position: fixed;
-    top: 0;
-    right: -100%;
-    background-color: var(--teal-blue);
-    width: 80%;
-    height: 100%;
-    padding: 7.5rem 2rem 0;
-    transition: right 0.4s ease-in-out;
-  }
-
-  .show-menu {
-    right: 0;
-  }
-
-  .nav-list {
-    flex-direction: column;
-    row-gap: 1.5rem;
-  }
-
-  .nav-toggle {
-    display: block;
-  }
+/*SHOW MENU*/
+.show-menu{
+  right: 0;
 }
+
+
 
 /*REUSABLE CSS CLASSES*/
 .container{
