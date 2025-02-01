@@ -54,8 +54,49 @@ nav{
   height: auto;
   justify-content: space-between;
   display: flex;
-  align-items: center;
+  align-items: ;
+}
 
+.nav-close{
+  font-size: 1.5rem;
+  color: #FFFFF0;
+  cursor: pointer;
+  transition: color .4s;
+}
+.nav-toggle{
+  font-size: 1.5rem;
+  color: #FFFFF0;
+  cursor: pointer;
+  transition: color .4s;
+
+}
+/*Navigation For Mobile Devices*/
+@media screen and(max-width:1150px) {
+  .nav-menu{
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: var(--teal-blue);
+    width: 80%;
+    height: 100%;
+    padding: 7.5rem 3.5rem 0;
+    transition: right .4s;
+  }
+}
+.nav-list{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  row-gap: 4rem;
+  color: #FFFFF0;
+  text-decoration: none;
+}
+a{
+  color: var(--ivory-white);
+  transition: color .4s;
+}
+a :hover{
+  color:var(--teal-blue);
 }
 
 /*REUSABLE CSS CLASSES*/
