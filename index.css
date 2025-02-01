@@ -90,6 +90,7 @@ nav{
   column-gap: 4rem;
   color: #FFFFF0;
   text-decoration: none;
+  margin-top: 1rem;
 }
 a{
   color: var(--ivory-white);
@@ -98,6 +99,11 @@ a{
 }
 a:hover{
   color:var(--vibrant-orange);
+}
+.nav-close{
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
 }
 
 /*REUSABLE CSS CLASSES*/
