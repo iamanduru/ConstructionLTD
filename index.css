@@ -22,96 +22,101 @@
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-html{
+html {
   scroll-behavior: smooth;
 }
-
 body {
-    background-color: var(--teal-blue);
-    color: var(--ivory-white);
+  background-color: var(--teal-blue);
+  color: var(--ivory-white);
 }
 
-.Logo{
-  width: 50px;
-  height: auto;
-
-}
-/*Header &Nav*/
 .header {
   position: fixed;
   width: 100%;
   top: 0;
   left: 0;
   background: var(--teal-blue);
-  z-index: var(--z-index);
+  z-index: 999;
 }
-nav{
-  position: relative;
-  height: auto;
-  justify-content: space-between;
+
+nav {
   display: flex;
-  align-items: ;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
 }
 
-.nav-close{
-  font-size: 1.5rem;
-  color: #FFFFF0;
-  cursor: pointer;
-  transition: color .4s;
+.Logo {
+  width: 50px;
+  height: auto;
 }
-.nav-toggle{
-  font-size: 1.5rem;
-  color: #FFFFF0;
-  cursor: pointer;
-  transition: color .4s;
 
+.nav-menu {
+  display: none;
 }
-/*Navigation For Mobile Devices*/
-@media screen and(max-width:1150px) {
-  .nav-menu{
-    position: fixed;
-    top: 0;
-    right: 0;
-    background-color: var(--teal-blue);
-    width: 80%;
-    height: 100%;
-    padding: 7.5rem 3.5rem 0;
-    transition: right .4s;
-  }
-}
-.nav-list{
+
+.nav-list {
   list-style: none;
   display: flex;
-  flex-direction: row;
-  column-gap: 4rem;
-  color: #FFFFF0;
-  text-decoration: none;
-  margin-top: 1rem;
+  column-gap: 2rem;
 }
-a{
+
+.nav-list a {
+  text-decoration: none;
   color: var(--ivory-white);
-  transition: color .4s;
-  text-decoration: none;
+  transition: color 0.4s;
 }
-a:hover{
-  color:var(--vibrant-orange);
+
+.nav-list a:hover {
+  color: var(--vibrant-orange);
 }
-.nav-close{
+
+.nav-toggle {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--ivory-white);
+  display: none;
+}
+
+.nav-close {
+  font-size: 1.5rem;
+  color: var(--ivory-white);
   position: absolute;
   top: 1rem;
   right: 1.5rem;
+  cursor: pointer;
 }
 
-/*SHOW MENU*/
-.show-menu{
-  right: 0;
+/* Mobile Navigation */
+@media screen and (max-width: 1150px) {
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    background-color: var(--teal-blue);
+    width: 80%;
+    height: 100%;
+    padding: 7.5rem 2rem 0;
+    transition: right 0.4s ease-in-out;
+  }
+
+  .show-menu {
+    right: 0;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    row-gap: 1.5rem;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
 }
-
-
 
 /*REUSABLE CSS CLASSES*/
 .container{
