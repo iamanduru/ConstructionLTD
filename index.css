@@ -86,17 +86,18 @@ nav{
 .nav-list{
   list-style: none;
   display: flex;
-  flex-direction: column;
-  row-gap: 4rem;
+  flex-direction: row;
+  column-gap: 4rem;
   color: #FFFFF0;
   text-decoration: none;
 }
 a{
   color: var(--ivory-white);
   transition: color .4s;
+  text-decoration: none;
 }
-a :hover{
-  color:var(--teal-blue);
+.nav-link:hover{
+  color:var(--vibrant-orange);
 }
 
 /*REUSABLE CSS CLASSES*/
