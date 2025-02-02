@@ -95,12 +95,23 @@ a:hover {
 
 
 .Part-1{
-  background-image: url("img/Anduru\ Construction.jpg");
+  background-image: url()
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;  
     height: 500px;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    color: white;
+    padding: 200px;
   }
+
+  .Content h1{
+    font-size: 80px;
    
-  
+  }
+  .Content p{
+    font-size: 40px;
+  }
