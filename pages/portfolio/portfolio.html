@@ -36,9 +36,9 @@
             <h1>Feature Projects</h1>
             <div class="filters">
                 <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn active" data-filter="commercial">Commercial</button>
-                <button class="filter-btn active" data-filter="residential">Residential</button>
-                <button class="filter-btn active" data-filter="industrial">Industrial</button>
+                <button class="filter-btn active" data-filter="designs">Designs</button>
+                <button class="filter-btn active" data-filter="supervision">Designs & Supervision</button>
+                <button class="filter-btn active" data-filter="build">Designs & Build</button>
             </div>
         </div>
 
@@ -52,13 +52,29 @@
             <div class="modal__backdrop"></div>
             <div class="modal__content">
                 <div class="modal__header">
-                    <h2 id="modal-header"></h2>
+                    <h2 id="modalTitle"></h2>
                     <button class="close-btn" id="closeModal">
                         <span></span>
                         <span></span>
                     </button>
                 </div>
-                <div class="modal__body" id="modalBody"></div>
+                <div class="modal__body">
+                    <div class="project-details">
+                        <div class="main-image-container">
+                            <img id="mainImage" src="" alt="">
+                            <button class="nav-btn prev-btn" id="prevBtn">&lt;</button>
+                            <button class="nav-btn next-btn" id="nextBtn">&gt;</button>
+                        </div>
+                        <div class="thumbnail-gallery" id="thumbnailGallery"></div>
+                    </div>
+                    <div class="project-info">
+                        <p id="projectDescription"></p>
+                        <div class="project-metadata">
+                            <span id="projectCategory"></span>
+                            <span id="projectDate"></span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
